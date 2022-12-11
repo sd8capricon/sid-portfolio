@@ -13,14 +13,12 @@ import Section from '../components/Section'
 import SocialLinks from '../components/SocialLinks';
 
 
-export default function Home() {
+const Home = () => {
 
   const navRef = useRef<HTMLElement>(null);
   const homeRef = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
-    console.log(homeRef.current);
-
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline()
       t1.from(navRef.current, {
@@ -158,3 +156,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;
