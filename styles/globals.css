@@ -36,6 +36,20 @@ body {
   left: 0;
 }
 
+
+/* Home Section */
+.home li {
+  transition: all 0.3s ease-in-out;
+}
+
+.home li a:hover {
+  text-decoration: underline;
+}
+
+.home li:hover {
+  transform: translateX(16px);
+}
+
 input,
 textarea {
   background-color: var(--background);

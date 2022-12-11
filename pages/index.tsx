@@ -60,21 +60,16 @@ const Home = () => {
           </div>
           <div className="bg-[#1F1F1F] px-5 md:px-10 py-8 text-2xl md:text-4xl rounded-b-xl">
             <div>
-              <span className="opacity-75">{'>'} Hi</span> 👋<span className="opacity-75">, I am </span>
+              <span className="opacity-75">&gt; Hi</span> 👋<span className="opacity-75">, I am </span>
               <span className="font-bold">Siddharth Dhaigude</span>
             </div>
-            <div className="opacity-75">{'>'} I am Software Developer</div><br />
+            <div className="opacity-75">&gt; I am Software Developer</div><br />
             <ol className="opacity-75">
-              <li className="transition-all duration-300 ease-in-out hover:translate-x-4">{'>'} <Link className="hover:underline"
-                href="#about">1.About</Link></li>
-              <li className="transition-all duration-300 ease-in-out hover:translate-x-4">{'>'} <Link className="hover:underline"
-                href="#resume">2.Resume</Link></li>
-              <li className="transition-all duration-300 ease-in-out hover:translate-x-4">{'>'} <Link className="hover:underline"
-                href="#projects">3.Projects</Link></li>
-              <li className="transition-all duration-300 ease-in-out hover:translate-x-4">{'>'} <Link className="hover:underline"
-                href="#contact">4.Contact</Link></li>
-              <li className="transition-all duration-300 ease-in-out hover:translate-x-4">{'>'} <Link className="hover:underline"
-                href="src/assets/Siddharth's Resume.pdf" download>5.Download Resume</Link>
+              <li>&gt; <Link href="#about">1.About</Link></li>
+              <li>&gt; <Link href="#resume">2.Resume</Link></li>
+              <li>&gt; <Link href="#projects">3.Projects</Link></li>
+              <li>&gt; <Link href="#contact">4.Contact</Link></li>
+              <li>&gt; <Link href="src/assets/Siddharth's Resume.pdf" download>5.Download Resume</Link>
               </li>
             </ol>
           </div>
