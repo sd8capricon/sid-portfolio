@@ -7,8 +7,6 @@ interface SocialLinksProps {
 }
 
 const SocialLinks: FC<SocialLinksProps> = (props) => {
-    console.log(props.mail);
-
     return (
         <div className={"flex " + (props.className ? props.className : '')}>
             <Link href="https://linkedin.com/in/sdhaigude" target="_blank" className="mr-7">

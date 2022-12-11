@@ -13,7 +13,7 @@ const NavLink: FC<NavLinkProps> = (props) => {
         <li onClick={props.toggleNav} className={"px-4 py-1 " + (props.download ? 'rounded-xl bg-primary-light' : 'opacity-75')}>
             {
                 props.download ?
-                    <Link href={props.href} download>{props.children}</Link> :
+                    <a href={props.href} download>{props.children}</a> :
                     <Link href={props.href}>{props.children}</Link>
             }
         </li>

@@ -8,9 +8,10 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import NavBar from '../components/NavBar'
-import profile from '../assets/profile-primary.png'
 import Section from '../components/Section'
 import SocialLinks from '../components/SocialLinks';
+
+import profile from '../public/profile-primary.png'
 
 
 const Home = () => {
@@ -69,7 +70,7 @@ const Home = () => {
               <li>&gt; <Link href="#resume">2.Resume</Link></li>
               <li>&gt; <Link href="#projects">3.Projects</Link></li>
               <li>&gt; <Link href="#contact">4.Contact</Link></li>
-              <li>&gt; <Link href="src/assets/Siddharth's Resume.pdf" download>5.Download Resume</Link>
+              <li>&gt; <a href="/assets/files/Siddharth's Resume.pdf" download="true">5.Download Resume</a>
               </li>
             </ol>
           </div>
@@ -81,7 +82,7 @@ const Home = () => {
         <div className="grid md:grid-flow-row lg:grid-flow-col lg:gap-24">
           <div className="col-auto py-7 mx-auto lg:block">
             <h2 className="section-title">Learn More <br />About Me</h2>
-            <Image src={profile} alt="sid" width="150" height="150" className="rounded-full border-4 border-primary-lighter mt-12 lg:mt-24 h-48 w-48" />
+            <Image src="/assets/images/profile.png" alt="sid" width="150" height="150" className="rounded-full border-4 border-primary-lighter mt-12 lg:mt-24 h-48 w-48" />
           </div>
           <div className="col-auto">
             <div className="container bg-primary rounded-xl px-5 py-5">

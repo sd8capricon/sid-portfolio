@@ -1,8 +1,8 @@
 import React, { FC, useState } from 'react';
 import NavLink from '../components/NavLink'
 
-interface NavBarProps{
-    navRef: React.MutableRefObject<HTMLElement|null>
+interface NavBarProps {
+    navRef: React.MutableRefObject<HTMLElement | null>
 }
 
 const NavBar: FC<NavBarProps> = (props) => {
@@ -33,7 +33,7 @@ const NavBar: FC<NavBarProps> = (props) => {
                 <NavLink toggleNav={toggleNav} href='#resume'>Resume</NavLink>
                 <NavLink toggleNav={toggleNav} href='#projects'>Projects</NavLink>
                 <NavLink toggleNav={toggleNav} href='#contact'>Contact</NavLink>
-                <NavLink toggleNav={toggleNav} href='assets/Siddharth Resume.pdf' download>Download Resume</NavLink>
+                <NavLink toggleNav={toggleNav} href='/assets/files/Siddharth Resume.pdf' download>Download Resume</NavLink>
             </ul>
         </nav>
     );
