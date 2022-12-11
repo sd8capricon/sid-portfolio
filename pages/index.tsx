@@ -61,7 +61,7 @@ const Home = () => {
           </div>
           <div className="bg-[#1F1F1F] px-5 md:px-10 py-8 text-2xl md:text-4xl rounded-b-xl">
             <div>
-              <span className="opacity-75">&gt; Hi</span> 👋<span className="opacity-75">, I am </span>
+              <span className="opacity-75">&gt; Hi</span> <span className="wave">👋</span><span className="opacity-75">, I am </span>
               <span className="font-bold">Siddharth Dhaigude</span>
             </div>
             <div className="opacity-75">&gt; I am Software Developer</div><br />
