@@ -1,12 +1,43 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { useRef, useLayoutEffect } from "react";
+import gsap from 'gsap';
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import NavBar from '../components/NavBar'
 import profile from '../assets/profile-primary.png'
 import Section from '../components/Section'
 
+
 export default function Home() {
 
+  const navRef = useRef<HTMLElement>(null);
+  const homeRef = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    console.log(homeRef.current);
+
+    let ctx = gsap.context(() => {
+      const t1 = gsap.timeline()
+      t1.from(navRef.current, {
+        scrollTrigger: {
+          // markers: true,
+          trigger: "#home",
+          start: "top top",
+          endTrigger: ".terminal",
+          end: "bottom top",
+          scrub: true
+        },
+        ease: "ease-in-out",
+        translateY: -1000,
+      })
+    }, homeRef);
+
+    return () => ctx.revert();
+  }, [])
 
   return (
     <>
@@ -19,9 +50,9 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
       </Head>
 
-      <NavBar />
+      <NavBar navRef={navRef} />
 
-      <Section className='h-screen flex flex-col justify-center items-center' id='home'>
+      <Section sectionRef={homeRef} className='h-screen flex flex-col justify-center items-center' id='home'>
         <div className="terminal container w-fit">
           <div className="bg-[#545454] py-1 px-5 rounded-t-xl">
             <span className="h-3 w-3 bg-red-500 inline-block rounded-full"></span>
@@ -109,7 +140,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="contact">
+      <Section className='scroll-mt-12' id="contact">
         <h2 className="section-title">Contact Me</h2>
         <div className="grid grid-cols-2 mt-12">
           <div className="col-span-2 md:col-span-1 md:pr-3">
