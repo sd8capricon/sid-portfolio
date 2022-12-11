@@ -55,9 +55,9 @@ export default function Home() {
       <Section sectionRef={homeRef} className='h-screen flex flex-col justify-center items-center' id='home'>
         <div className="terminal container w-fit">
           <div className="bg-[#545454] py-1 px-5 rounded-t-xl">
-            <span className="h-3 w-3 bg-red-500 inline-block rounded-full"></span>
-            <span className="h-3 w-3 bg-yellow-300 inline-block rounded-full"></span>
-            <span className="h-3 w-3 bg-green-400 inline-block rounded-full"></span>
+            <span className="h-3 w-3 bg-red-500 inline-block rounded-full"> </span>&nbsp;
+            <span className="h-3 w-3 bg-yellow-300 inline-block rounded-full"> </span>&nbsp;
+            <span className="h-3 w-3 bg-green-400 inline-block rounded-full"> </span>
           </div>
           <div className="bg-[#1F1F1F] px-5 md:px-10 py-8 text-2xl md:text-4xl rounded-b-xl">
             <div>
