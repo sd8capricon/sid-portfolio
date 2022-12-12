@@ -11,8 +11,6 @@ import NavBar from '../components/NavBar'
 import Section from '../components/Section'
 import SocialLinks from '../components/SocialLinks';
 
-import profile from '../public/profile-primary.png'
-
 
 const Home = () => {
 
@@ -149,6 +147,10 @@ const Home = () => {
           </div>
         </div>
       </Section>
+
+      <footer className="text-center">
+        Developed by Siddharth Dhaigude
+      </footer>
     </>
   )
 }
