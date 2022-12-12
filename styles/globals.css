@@ -20,6 +20,7 @@ body {
 }
 
 .section-title {
+  margin-bottom: 3rem;
   text-transform: uppercase;
   color: var(--primary-color-lighter);
   position: relative;
@@ -96,6 +97,20 @@ body {
   100% {
     transform: rotate(0.0deg)
   }
+}
+
+
+/* Resume Section */
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  left: -5px;
+  top: 36px;
+  background: var(--primary-color-lighter);
+  border: 2px solid var(--primary-color-lighter);
 }
 
 input,

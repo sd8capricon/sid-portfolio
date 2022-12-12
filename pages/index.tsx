@@ -76,11 +76,11 @@ const Home = () => {
         <SocialLinks className='mt-6' />
       </Section>
 
-      <Section className='scroll-mt-12' id="about">
+      <Section id="about">
         <div className="grid md:grid-flow-row lg:grid-flow-col lg:gap-24">
           <div className="col-auto py-7 mx-auto lg:block">
             <h2 className="section-title">Learn More <br />About Me</h2>
-            <Image src="/assets/images/profile.png" alt="sid" width="150" height="150" className="rounded-full border-4 border-primary-lighter mt-12 lg:mt-24 h-48 w-48" />
+            <Image src="/assets/images/profile.png" alt="sid" width="150" height="150" className="rounded-full border-4 border-primary-lighter lg:mt-24 h-48 w-48" />
           </div>
           <div className="col-auto">
             <div className="container bg-primary rounded-xl px-5 py-5">
@@ -105,9 +105,28 @@ const Home = () => {
         </div>
       </Section>
 
-      <Section className='scroll-mt-12' id="contact">
+      <Section id='resume'>
+        <h2 className="section-title">Check My Resume</h2>
+        <div className="grid grid-cols-2 w-full rounded-xl px-1 py-5">
+          <div className="col-span-1">
+            <div className="container px-5 resume-item relative">
+              <h3 className="text-2xl font-bold inline-block">Education</h3>
+              <h4 className='font-bold'>Bachelor of Engineering - Computer Engineering</h4>
+              <span>CGPA: 9.4/10</span><br />
+              <span>University of Mumbai(2020-24)</span>
+            </div>
+          </div>
+          <div className="col-span-1 px-1 ">
+            <div className="container">
+              <h3 className="text-2xl font-bold">Projects</h3>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="contact">
         <h2 className="section-title">Contact Me</h2>
-        <div className="grid grid-cols-2 mt-12">
+        <div className="grid grid-cols-2">
           <div className="col-span-2 md:col-span-1 md:pr-3">
             <p>Currently looking for any new opppornuties, my inbox is always open. Whether you have a question or just want
               to say hi, I'll try my best to get back to you!</p>
@@ -148,7 +167,7 @@ const Home = () => {
         </div>
       </Section>
 
-      <footer className="text-center">
+      <footer className="text-center py-3">
         Developed by Siddharth Dhaigude
       </footer>
     </>
