@@ -16,9 +16,10 @@ const Home = () => {
 
   const navRef = useRef<HTMLElement>(null);
   const homeRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+    let homeCtx = gsap.context(() => {
       const t1 = gsap.timeline()
       t1.from(navRef.current, {
         scrollTrigger: {
@@ -34,7 +35,49 @@ const Home = () => {
       })
     }, homeRef);
 
-    return () => ctx.revert();
+    let aboutCtx = gsap.context(() => {
+      const t2 = gsap.timeline()
+      t2
+        .from('#about .section-title', {
+          scrollTrigger: {
+            trigger: "#about .section-title",
+            start: "top bottom",
+            endTrigger: "#about .about-content",
+            end: "center center",
+            scrub: true
+          },
+          ease: "ease-in-out",
+          translateX: -500,
+        })
+        .from('#about .portfolio-img', {
+          scrollTrigger: {
+            trigger: "#about .section-title",
+            start: "top bottom",
+            endTrigger: "#about .about-content",
+            end: "center center",
+            scrub: true
+          },
+          ease: "ease-in-out",
+          rotate: -360,
+          translateX: -500,
+        })
+        .from('#about .about-content', {
+          scrollTrigger: {
+            trigger: "#about .section-title",
+            start: "top bottom",
+            endTrigger: "#about .about-content",
+            end: "center center",
+            scrub: true
+          },
+          ease: "ease-in-out",
+          translateX: 500,
+        })
+    }, aboutRef);
+
+    return () => {
+      homeCtx.revert();
+      aboutCtx.revert();
+    };
   }, [])
 
   return (
@@ -76,14 +119,14 @@ const Home = () => {
         <SocialLinks className='mt-6' />
       </Section>
 
-      <Section id="about">
+      <Section sectionRef={aboutRef} id="about">
         <div className="grid md:grid-flow-row lg:grid-flow-col lg:gap-24">
           <div className="col-auto py-7 mx-auto lg:block">
             <h2 className="section-title">Learn More <br />About Me</h2>
-            <Image src="/assets/images/profile.png" alt="sid" width="150" height="150" className="rounded-full border-4 border-primary-lighter lg:mt-24 h-48 w-48" />
+            <Image src="/assets/images/profile.png" alt="sid" width="150" height="150" className="portfolio-img rounded-full border-4 border-primary-lighter lg:mt-24 h-48 w-48" />
           </div>
           <div className="col-auto">
-            <div className="container bg-primary rounded-xl px-5 py-5">
+            <div className="about-content container bg-primary rounded-xl px-5 py-5">
               <h2 className="text-3xl font-semibold">Exuberant, Intuitive & Inquisitive</h2>
               <p className="mt-6">Problem Solver with Smart, Quick and Precise Googling Skill.
                 Seek and you shall find!
