@@ -60,7 +60,7 @@ const Home = () => {
           <div className="bg-[#1F1F1F] px-5 md:px-10 py-8 text-2xl md:text-4xl rounded-b-xl">
             <div>
               <span className="opacity-75">&gt; Hi</span> <span className="wave">👋</span><span className="opacity-75">, I am </span>
-              <span className="font-bold">Siddharth Dhaigude</span>
+              <span className="font-bold text-primary-lighter">Siddharth Dhaigude</span>
             </div>
             <div className="opacity-75">&gt; I am Software Developer</div><br />
             <ol className="opacity-75">
@@ -107,18 +107,75 @@ const Home = () => {
 
       <Section id='resume'>
         <h2 className="section-title">Check My Resume</h2>
-        <div className="grid grid-cols-2 w-full rounded-xl px-1 py-5">
-          <div className="col-span-1">
-            <div className="container px-5 resume-item relative">
-              <h3 className="text-2xl font-bold inline-block">Education</h3>
-              <h4 className='font-bold'>Bachelor of Engineering - Computer Engineering</h4>
-              <span>CGPA: 9.4/10</span><br />
-              <span>University of Mumbai(2020-24)</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full rounded-xl px-1 py-5 bg-primary">
+          <div className="lg:col-span-1 ml-3 md:ml-9">
+            <h3 className="text-2xl font-bold inline-block mb-5">Education</h3>
+            <div className="container px-5 resume-item relative border-l-2 mb-5">
+              <h4 className='font-bold text-primary-lighter'>Bachelor Engineering - Computer Engineering</h4>
+              <span className='font-semibold'>CGPA: 9.4/10</span><br />
+              <span className='text-gray-300 italic'>University of Mumbai(2020-24)</span>
+              <ul className='text-gray-300 mt-5 ml-3 list-disc'>
+                <li>Association of Computing Machinery(ACM) - Vice ChairPerson(2022-23), Asst. Technical Head(2021-22)</li>
+                <li>Teknack Gaming Studio - Organizer, Developer & Mentor</li>
+                <li>Taught and led technical training sessions, talks and workshops on various tools, technologies and softwares for the students of DBIT as well as other colleges.</li>
+                <li>Sessions on topics like Web Development, Programming, Git, GitHub, Game Development, Unity, and many more.</li>
+              </ul>
+            </div>
+
+            <h3 className="text-2xl font-bold inline-block mb-5">Organizations</h3>
+            <div className="container px-5 resume-item relative border-l-2">
+              <h4 className='font-bold uppercase text-primary-lighter'>Association of Computing Machinery(ACM)</h4>
+              <span className='text-gray-300 italic'>Vice Chairperson (2022-23)</span>
+              <ul className='text-gray-300 mt-5 ml-3 list-disc mb-5'>
+                <li>Co-ordinate and manage the Core Team and organize events, workshops and trainings for the students.</li>
+                <li>Manage and coordinate all the activities of the chapter and responsible for all administrative, functional and Organizational duties in the chapter.</li>
+              </ul>
+              <span className='text-gray-300 italic'>Asst-Technical Head (2021-22)</span>
+              <ul className='text-gray-300 mt-5 ml-3 list-disc mb-5'>
+                <li>Conducted workshops, taught and trained students on topics like Git, GitHub, Web Development.</li>
+                <li>Responsible for maintaining and implementing new features for the offical chapter website.</li>
+              </ul>
             </div>
           </div>
-          <div className="col-span-1 px-1 ">
+          <div className="lg:col-span-1 px-1 ml-3 md:ml-auto">
             <div className="container">
-              <h3 className="text-2xl font-bold">Projects</h3>
+              <h3 className="text-2xl font-bold mb-5">Projects</h3>
+              <div className="container px-5 resume-item relative border-l-2 mb-5">
+                <h4 className='font-bold uppercase text-primary-lighter'>ANTI-PLASTIC BRIGADE CHARITABLE TRUST</h4>
+                <span className='text-gray-300 italic'>Website Developer</span>
+                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
+                  <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
+                  <li>Developed, Designed and Deployed the website for the NGO.</li>
+                  <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
+                </ul>
+              </div>
+              <div className="container px-5 resume-item relative border-l-2 mb-5">
+                <h4 className='font-bold uppercase text-primary-lighter'>Architect Yogesh Dhaigude</h4>
+                <span className='text-gray-300 italic'>Website Developer</span>
+                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
+                  <li>Official Website for Architect Yogesh Dhaigude.</li>
+                  <li>Developed, Designed and Deployed the website with a content management system.</li>
+                  <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
+                </ul>
+              </div>
+              <div className="container px-5 resume-item relative border-l-2 mb-5">
+                <h4 className='font-bold uppercase text-primary-lighter'>COVID-19 ANALYSIS</h4>
+                <span className='text-gray-300 italic'>Data Analysis</span>
+                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
+                  <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
+                  <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
+                  <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
+                </ul>
+              </div>
+              <div className="container px-5 resume-item relative border-l-2 mb-5">
+                <h4 className='font-bold uppercase text-primary-lighter'>STUDENT ATTENDANCE SYSTEM</h4>
+                <span className='text-gray-300 italic'>App Development</span>
+                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
+                  <li>A system for teachers to record student’s attendance which would simplify tracking, analyzing student’s attendance.</li>
+                  <li>Implemented feature includes generating defaulters list, attendance analysis and marking/updating attendance.</li>
+                  <li>Technologies: Flutter, DjangoREST framework, Python</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +218,14 @@ const Home = () => {
               </div>
               <input className="w-full mt-5" type="text" placeholder="Subject" />
               <textarea className="h-fit w-full mt-5 pt-1" name="" id="" cols={30} rows={7} placeholder="Message"></textarea>
-              <button type="submit" className="self-center rounded-xl w-fit bg-primary-light mt-5 px-4 py-1">Submit</button>
+              <button type="submit" className="self-center rounded-xl w-fit bg-primary-light mt-5 px-4 py-1">
+                <div className="flex items-center">
+                  <span className="mr-2">Submit</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                    <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                  </svg>
+                </div>
+              </button>
             </form>
           </div>
         </div>
