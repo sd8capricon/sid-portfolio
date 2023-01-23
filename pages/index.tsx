@@ -41,20 +41,20 @@ const Home = () => {
         .from('#about .section-title', {
           scrollTrigger: {
             trigger: "#about .section-title",
-            start: "top bottom",
+            start: "center bottom",
             endTrigger: "#about .about-content",
-            end: "center center",
+            end: "top center",
             scrub: true
           },
           ease: "ease-in-out",
-          translateX: -500,
+          translateX: -300,
         })
         .from('#about .portfolio-img', {
           scrollTrigger: {
             trigger: "#about .section-title",
             start: "top bottom",
             endTrigger: "#about .about-content",
-            end: "center center",
+            end: "top center",
             scrub: true
           },
           ease: "ease-in-out",
@@ -66,7 +66,7 @@ const Home = () => {
             trigger: "#about .section-title",
             start: "top bottom",
             endTrigger: "#about .about-content",
-            end: "center center",
+            end: "top center",
             scrub: true
           },
           ease: "ease-in-out",
