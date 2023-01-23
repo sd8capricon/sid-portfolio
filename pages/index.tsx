@@ -53,8 +53,8 @@ const Home = () => {
           scrollTrigger: {
             trigger: "#about .section-title",
             start: "top bottom",
-            endTrigger: "#about .about-content",
-            end: "top center",
+            endTrigger: "#about .section-title",
+            end: "bottom center",
             scrub: true
           },
           ease: "ease-in-out",
@@ -109,9 +109,9 @@ const Home = () => {
             <ol className="opacity-75">
               <li>&gt; <Link href="#about">1.About</Link></li>
               <li>&gt; <Link href="#resume">2.Resume</Link></li>
-              <li>&gt; <Link href="#projects">3.Projects</Link></li>
-              <li>&gt; <Link href="#contact">4.Contact</Link></li>
-              <li>&gt; <a href="/assets/files/Siddharth's Resume.pdf" download="true">5.Download Resume</a>
+              {/* <li>&gt; <Link href="#projects">3.Projects</Link></li> */}
+              <li>&gt; <Link href="#contact">3.Contact</Link></li>
+              <li>&gt; <a href="/assets/files/Siddharth's Resume.pdf" download="true">4.Download Resume</a>
               </li>
             </ol>
           </div>
