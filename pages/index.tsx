@@ -105,7 +105,7 @@ const Home = () => {
               <span className="opacity-75">&gt; Hi</span> <span className="wave">👋</span><span className="opacity-75">, I am </span>
               <span className="font-bold text-primary-lighter">Siddharth Dhaigude</span>
             </div>
-            <div className="opacity-75">&gt; I am Software Developer</div><br />
+            <div className="opacity-75">&gt; I am a Software Developer</div><br />
             <ol className="opacity-75">
               <li>&gt; <Link href="#about">1.About</Link></li>
               <li>&gt; <Link href="#resume">2.Resume</Link></li>
@@ -228,7 +228,7 @@ const Home = () => {
         <h2 className="section-title">Contact Me</h2>
         <div className="grid grid-cols-2">
           <div className="col-span-2 md:col-span-1 md:pr-3">
-            <p>Currently looking for any new opppornuties, my inbox is always open. Whether you have a question or just want
+            <p>Currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want
               to say hi, I'll try my best to get back to you!</p>
             <div className="social-profiles mt-6">
               <div className="flex items-center mb-3">
