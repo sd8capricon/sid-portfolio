@@ -154,8 +154,11 @@ const Home = () => {
           <div className="lg:col-span-1 ml-3 md:ml-9">
             <h3 className="text-2xl font-bold inline-block mb-5">Education</h3>
             <div className="container px-5 resume-item relative border-l-2 mb-5">
-              <h4 className='font-bold text-primary-lighter'>Bachelor Engineering - Computer Engineering</h4>
-              <span className='font-semibold'>CGPA: 8.86/10</span><br />
+              <h4 className='font-bold text-primary-lighter'>
+                Bachelor Engineering - Computer Engineering, <br />
+                <span className='font-normal'>Hons in Data Science</span>
+              </h4>
+              {/* <span className='font-semibold'>Hons in Data Science</span><br /> */}
               <span className='text-gray-300 italic'>University of Mumbai(2020-24)</span>
               <ul className='text-gray-300 mt-5 ml-3 list-disc'>
                 <li>Association of Computing Machinery(ACM) - Vice ChairPerson(2022-23), Asst. Technical Head(2021-22)</li>
