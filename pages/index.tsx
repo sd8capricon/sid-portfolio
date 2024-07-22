@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 import NavBar from '../components/NavBar'
 import Section from '../components/Section'
 import SocialLinks from '../components/SocialLinks';
+import Project from '../components/Project';
 
 
 const Home = () => {
@@ -127,12 +128,8 @@ const Home = () => {
           </div>
           <div className="col-auto">
             <div className="about-content container bg-primary rounded-xl px-5 py-5">
-              <h2 className="text-3xl font-semibold">Exuberant, Intuitive & Inquisitive</h2>
-              <p className="mt-6">Problem Solver with Smart, Quick and Precise Googling Skill.
-                Seek and you shall find!
-                A passionate computer engineering student with
-                affinity towards development and programming and working dominantly
-                on Web Technologies.</p>
+              <h2 className="text-3xl font-semibold">Enthusiastic, Insightful & Curious</h2>
+              <p className="mt-6">A resourceful problem solver with adept, swift, and accurate Googling abilities. Seek and you shall find! An enthusiastic computer engineering student with a strong passion for development and programming, specializing predominantly in web technologies.</p>
               <ul className="mt-6">
                 <li>{'>'} <strong>Degree:</strong> Bachelor of Engineering, Computer
                   Enginering<br />University of Mumbai
@@ -186,42 +183,38 @@ const Home = () => {
           <div className="lg:col-span-1 px-1 ml-3 md:ml-auto">
             <div className="container">
               <h3 className="text-2xl font-bold mb-5">Projects</h3>
-              <div className="container px-5 resume-item relative border-l-2 mb-5">
-                <h4 className='font-bold uppercase text-primary-lighter'>ANTI-PLASTIC BRIGADE CHARITABLE TRUST</h4>
-                <span className='text-gray-300 italic'>Website Developer</span>
-                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
-                  <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
-                  <li>Developed, Designed and Deployed the website for the NGO.</li>
-                  <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
-                </ul>
-              </div>
-              <div className="container px-5 resume-item relative border-l-2 mb-5">
-                <h4 className='font-bold uppercase text-primary-lighter'>Architect Yogesh Dhaigude</h4>
-                <span className='text-gray-300 italic'>Website Developer</span>
-                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
-                  <li>Official Website for Architect Yogesh Dhaigude.</li>
-                  <li>Developed, Designed and Deployed the website with a content management system.</li>
-                  <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
-                </ul>
-              </div>
-              <div className="container px-5 resume-item relative border-l-2 mb-5">
-                <h4 className='font-bold uppercase text-primary-lighter'>COVID-19 ANALYSIS</h4>
-                <span className='text-gray-300 italic'>Data Analysis</span>
-                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
-                  <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
-                  <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
-                  <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
-                </ul>
-              </div>
-              <div className="container px-5 resume-item relative border-l-2 mb-5">
-                <h4 className='font-bold uppercase text-primary-lighter'>STUDENT ATTENDANCE SYSTEM</h4>
-                <span className='text-gray-300 italic'>App Development</span>
-                <ul className='text-gray-300 mt-5 ml-3 list-disc'>
-                  <li>A system for teachers to record student’s attendance which would simplify tracking, analyzing student’s attendance.</li>
-                  <li>Implemented feature includes generating defaulters list, attendance analysis and marking/updating attendance.</li>
-                  <li>Technologies: Flutter, DjangoREST framework, Python</li>
-                </ul>
-              </div>
+              <Project
+                org="Anti-Plastic Brigade Charitable Trust"
+                title="Website Developer"
+                link='https://anti-plasticbrigade.com'>
+                <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
+                <li>Developed, Designed and Deployed the website for the NGO.</li>
+                <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
+              </Project>
+              <Project
+                org='Architect Yogesh Dhaigude'
+                title='Website Developer'
+                link='https://ayda.in'>
+                <li>Official Website for Architect Yogesh Dhaigude.</li>
+                <li>Developed, Designed and Deployed the website with a content management system.</li>
+                <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
+              </Project>
+              <Project
+                org='COVID-19 Analysis'
+                title='Data Analysis'
+              >
+                <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
+                <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
+                <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
+              </Project>
+              <Project
+                org='Student Attendance System'
+                title='App Developement'
+              >
+                <li>A system for teachers to record student's attendance which would simplify tracking, analyzing student’s attendance.</li>
+                <li>Implemented feature includes generating defaulters list, attendance analysis and marking/updating attendance.</li>
+                <li>Technologies: Flutter, DjangoREST framework, Python</li>
+              </Project>
             </div>
           </div>
         </div>

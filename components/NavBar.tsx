@@ -31,7 +31,7 @@ const NavBar: FC<NavBarProps> = (props) => {
                 <NavLink toggleNav={toggleNav} href='#'>Home</NavLink>
                 <NavLink toggleNav={toggleNav} href='#about'>About</NavLink>
                 <NavLink toggleNav={toggleNav} href='#resume'>Resume</NavLink>
-                <NavLink toggleNav={toggleNav} href='#projects'>Projects</NavLink>
+                {/* <NavLink toggleNav={toggleNav} href='#projects'>Projects</NavLink> */}
                 <NavLink toggleNav={toggleNav} href='#contact'>Contact</NavLink>
                 <NavLink toggleNav={toggleNav} href='/assets/files/Siddharth Resume.pdf' download>Download Resume</NavLink>
             </ul>
