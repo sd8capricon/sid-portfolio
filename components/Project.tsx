@@ -20,7 +20,3 @@ const Project: React.FC<Props> = (props) => {
 }
 
 export default Project
-
-{/* <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
-                <li>Developed, Designed and Deployed the website for the NGO.</li>
-                <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li> */}
