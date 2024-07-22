@@ -10,8 +10,21 @@ gsap.registerPlugin(ScrollTrigger);
 import NavBar from '../components/NavBar'
 import Section from '../components/Section'
 import SocialLinks from '../components/SocialLinks';
-import Project from '../components/Project';
+import ResumeProject from '../components/ResumeProject';
 
+
+
+const Projects: Project[] = [
+  {
+    org: "Anti-Plastic Brigade Charitable Trust",
+    title: "Website Developer",
+    points: [
+      "Official Website for Anti-Plastic Brigade Charitable Trust.",
+      "Developed, Designed and Deployed the website for the NGO.",
+      "Technologies: HTML, CSS, Javascript and Bootstrap."
+    ]
+  }
+]
 
 const Home = () => {
 
@@ -183,42 +196,50 @@ const Home = () => {
           <div className="lg:col-span-1 px-1 ml-3 md:ml-auto">
             <div className="container">
               <h3 className="text-2xl font-bold mb-5">Projects</h3>
-              <Project
-                org="Anti-Plastic Brigade Charitable Trust"
+              <ResumeProject
+                org="Sacred Hearts School"
                 title="Website Developer"
-                link='https://anti-plasticbrigade.com'>
-                <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
-                <li>Developed, Designed and Deployed the website for the NGO.</li>
-                <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
-              </Project>
-              <Project
+                link="https://sacredheartschool.in">
+                <li>Official Website for Sacred Heart School.</li>
+                <li>Developed, Designed and Deployed the website</li>
+                <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+              </ResumeProject>
+              <ResumeProject
                 org='Architect Yogesh Dhaigude'
                 title='Website Developer'
                 link='https://ayda.in'>
                 <li>Official Website for Architect Yogesh Dhaigude.</li>
                 <li>Developed, Designed and Deployed the website with a content management system.</li>
                 <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
-              </Project>
-              <Project
+              </ResumeProject>
+              <ResumeProject
+                org="SAKHYA-WOMEN'S GUIDANCE CELL (NGO)"
+                title="Website Developer"
+                link="https://sakhyawgc.org">
+                <li>End-to-end development of the NGO's website, enhancing user experience and engagement.</li>
+                <li>Ensured website security by implementing SSL certificates.</li>
+                <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+              </ResumeProject>
+              <ResumeProject
+                org="Anti-Plastic Brigade Charitable Trust (NGO)"
+                title="Website Developer"
+                link='https://anti-plasticbrigade.com'>
+                <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
+                <li>Developed, Designed and Deployed the website for the NGO.</li>
+                <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
+              </ResumeProject>
+              <ResumeProject
                 org='COVID-19 Analysis'
                 title='Data Analysis'
               >
                 <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
                 <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
                 <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
-              </Project>
-              <Project
-                org='Student Attendance System'
-                title='App Developement'
-              >
-                <li>A system for teachers to record student's attendance which would simplify tracking, analyzing student’s attendance.</li>
-                <li>Implemented feature includes generating defaulters list, attendance analysis and marking/updating attendance.</li>
-                <li>Technologies: Flutter, DjangoREST framework, Python</li>
-              </Project>
+              </ResumeProject>
             </div>
           </div>
         </div>
-      </Section>
+      </Section >
 
       <Section id="contact">
         <h2 className="section-title">Contact Me</h2>
