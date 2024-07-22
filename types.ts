@@ -1,4 +1,4 @@
-interface Project {
+export type Project = {
     link?: String,
     org: String,
     title: String,

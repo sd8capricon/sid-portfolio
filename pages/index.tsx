@@ -12,7 +12,7 @@ import Section from '../components/Section'
 import SocialLinks from '../components/SocialLinks';
 import ResumeProject from '../components/ResumeProject';
 
-
+import { Project } from '../types';
 
 const Projects: Project[] = [
   {

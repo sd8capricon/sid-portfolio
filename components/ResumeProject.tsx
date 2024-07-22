@@ -5,7 +5,7 @@ interface Props {
     title: String
 }
 
-const Project: React.FC<Props> = (props) => {
+const ResumeProject: React.FC<Props> = (props) => {
     return (
         <div className="container px-5 resume-item relative border-l-2 mb-5">
             <a target="_blank" href={props.link}>
@@ -19,4 +19,4 @@ const Project: React.FC<Props> = (props) => {
     )
 }
 
-export default Project
+export default ResumeProject
