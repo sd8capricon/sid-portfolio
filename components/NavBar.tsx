@@ -1,17 +1,16 @@
-import React, { FC, useState } from 'react';
+'use client'
+
+import React, { ComponentProps, FC, useState } from 'react';
 import NavLink from '../components/NavLink'
 
-interface NavBarProps {
-    navRef: React.MutableRefObject<HTMLElement | null>
-}
 
-const NavBar: FC<NavBarProps> = (props) => {
+const NavBar: FC<ComponentProps<'nav'>> = (props) => {
 
     const [isActive, setIsActive] = useState(false);
     const toggleNav = () => setIsActive(!isActive);
 
     return (
-        <nav ref={props.navRef} className='fixed shadow-xl top-0 z-50 bg-background w-full lg:flex justify-between px-6 lg:px-12 xl:px-24 py-5'>
+        <nav ref={props.ref} id="nav" className='fixed shadow-xl top-0 z-50 bg-background w-full lg:flex justify-between px-6 lg:px-12 xl:px-24 py-5'>
             <div className="flex justify-between">
                 <span className='text-lg md:text-xl font-bold'><a href="#">Siddharth Dhaigude</a></span>
 

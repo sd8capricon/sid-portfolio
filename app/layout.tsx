@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps) {
     return (
         <html lang="en">
-            <body>
+            <body className={ibmplexmono.className}>
                 {children}
             </body>
         </html>
