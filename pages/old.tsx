@@ -8,7 +8,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import NavBar from '../components/NavBar'
-import Section from '../components/Section'
+import Section, { SectionTitle } from '../components/Section';
 import SocialLinks from '../components/SocialLinks';
 import ResumeProject from '../components/ResumeProject';
 
@@ -136,7 +136,7 @@ const Home = () => {
       <Section sectionRef={aboutRef} id="about">
         <div className="grid md:grid-flow-row lg:grid-flow-col lg:gap-24">
           <div className="col-auto py-7 mx-auto lg:block">
-            <h2 className="section-title">Learn More <br />About Me</h2>
+            <SectionTitle>Learn More <br />About Me</SectionTitle>
             <Image src="/assets/images/profile.png" alt="sid" width="150" height="150" className="portfolio-img rounded-full border-4 border-primary-lighter lg:mt-24 h-48 w-48" />
           </div>
           <div className="col-auto">
@@ -159,7 +159,7 @@ const Home = () => {
       </Section>
 
       <Section id='resume'>
-        <h2 className="section-title">Check My Resume</h2>
+        <SectionTitle>Check Out My Resume</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 w-full rounded-xl px-1 py-5 bg-primary">
           <div className="lg:col-span-1 ml-3 md:ml-9">
             <h3 className="text-2xl font-bold inline-block mb-5">Education</h3>
@@ -242,7 +242,8 @@ const Home = () => {
       </Section >
 
       <Section id="contact">
-        <h2 className="section-title">Contact Me</h2>
+        <SectionTitle>Contact Me</SectionTitle>
+        {/* <h2 className="section-title">Contact Me</h2> */}
         <div className="grid grid-cols-2">
           <div className="col-span-2 md:col-span-1 md:pr-3">
             <p>Currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want

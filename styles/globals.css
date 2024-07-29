@@ -19,13 +19,7 @@ body {
   color: white;
 }
 
-.section-title {
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  color: var(--primary-color-lighter);
-  position: relative;
-  @apply text-3xl font-semibold;
-}
+
 
 .section-title::after {
   content: "";
