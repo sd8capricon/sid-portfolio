@@ -19,8 +19,6 @@ body {
   color: white;
 }
 
-
-
 .section-title::after {
   content: "";
   position: absolute;
