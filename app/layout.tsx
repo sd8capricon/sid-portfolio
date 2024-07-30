@@ -12,14 +12,24 @@ const ibmplexmono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Siddharth",
-    description: "My Portfolio Website"
+    title: "Siddharth Dhaigude",
+    description: "My Portfolio Website",
+    icons: {
+        icon: "/favicon.ico",
+        apple: "/favicon.ico"
+    }
 }
 
 export default function RootLayout({ children }: LayoutProps) {
     return (
         <html lang="en">
-            <body className={ibmplexmono.className}>
+            <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
+                <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+            </head>
+
+            <body>
                 {children}
             </body>
         </html>
