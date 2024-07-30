@@ -21,11 +21,11 @@ export default function () {
         navRef
     }
 
-    useGSAP(() => { animation(refs) })
+    useGSAP(animation)
 
     return (
         <>
-            <NavBar ref={navRef} />
+            <NavBar innerRef={navRef} />
 
             <Section className='h-screen flex flex-col justify-center items-center' id='home'>
                 <div className="terminal container w-fit">

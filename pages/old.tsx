@@ -105,9 +105,9 @@ const Home = () => {
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
       </Head>
 
-      <NavBar ref={navRef} />
+      <NavBar innerRef={navRef} />
 
-      <Section ref={homeRef} className='h-screen flex flex-col justify-center items-center' id='home'>
+      <Section innerRef={homeRef} className='h-screen flex flex-col justify-center items-center' id='home'>
         <div className="terminal container w-fit">
           <div className="bg-[#545454] py-1 px-5 rounded-t-xl">
             <span className="h-3 w-3 bg-red-500 inline-block rounded-full"> </span>&nbsp;
@@ -133,7 +133,7 @@ const Home = () => {
         <SocialLinks className='mt-6' />
       </Section>
 
-      <Section ref={aboutRef} id="about">
+      <Section innerRef={aboutRef} id="about">
         <div className="grid md:grid-flow-row lg:grid-flow-col lg:gap-24">
           <div className="col-auto py-7 mx-auto lg:block">
             <SectionTitle>Learn More <br />About Me</SectionTitle>
@@ -243,7 +243,6 @@ const Home = () => {
 
       <Section id="contact">
         <SectionTitle>Contact Me</SectionTitle>
-        {/* <h2 className="section-title">Contact Me</h2> */}
         <div className="grid grid-cols-2">
           <div className="col-span-2 md:col-span-1 md:pr-3">
             <p>Currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want
