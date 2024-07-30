@@ -163,7 +163,6 @@ export default function () {
 
             <Section id="contact">
                 <SectionTitle>Contact Me</SectionTitle>
-                {/* <h2 className="section-title">Contact Me</h2> */}
                 <div className="grid grid-cols-2">
                     <div className="col-span-2 md:col-span-1 md:pr-3">
                         <p>Currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want
@@ -213,7 +212,7 @@ export default function () {
             </Section>
 
             <footer className="text-center py-3">
-                Developed by Siddharth Dhaigude
+                Designed & Developed by Siddharth Dhaigude
             </footer>
         </>
     )
