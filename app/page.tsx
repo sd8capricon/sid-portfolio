@@ -17,10 +17,6 @@ export default function () {
 
     const navRef = useRef<HTMLElement>(null);
 
-    const refs = {
-        navRef
-    }
-
     useGSAP(animation)
 
     return (
