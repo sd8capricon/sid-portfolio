@@ -1,5 +1,3 @@
-'use client'
-
 import React, { ComponentProps, FC, RefObject, useState } from 'react';
 import NavLink from '../components/NavLink'
 
