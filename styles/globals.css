@@ -31,6 +31,21 @@ body {
 
 
 /* Home Section */
+
+.terminal {
+  box-shadow: 15px 15px 2px 0px rgb(140, 140, 140, 0.20);
+  @apply mb-8;
+}
+
+.home .terminal-shadow{
+  content: '';
+  z-index: 500;
+  position: absolute;
+  width: inherit;
+  height: 10px;
+  background-color: red;
+}
+
 .home li {
   transition: all 0.3s ease-in-out;
 }

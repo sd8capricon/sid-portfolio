@@ -8,7 +8,7 @@ interface SocialLinksProps {
 
 const SocialLink: FC<{ href: string, children: ReactNode }> = (props) => {
     return (
-        <Link href={props.href} target="_blank" className="mr-7 p-2.5 border border-white rounded-full hover:text-black hover:bg-white">
+        <Link href={props.href} target="_blank" className="mr-5 p-2.5 border border-white rounded-full hover:text-black hover:bg-white">
             {props.children}
         </Link>
     )
