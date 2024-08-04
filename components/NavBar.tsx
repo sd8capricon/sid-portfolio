@@ -2,7 +2,7 @@ import React, { ComponentProps, FC, RefObject, useState } from 'react';
 import NavLink from '../components/NavLink'
 
 interface Props extends ComponentProps<'nav'> {
-    innerRef: RefObject<HTMLElement>;
+    innerRef?: RefObject<HTMLElement>;
 }
 
 
