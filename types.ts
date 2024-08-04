@@ -1,6 +1,6 @@
-export type Project = {
-    link?: String,
-    org: String,
-    title: String,
-    points: String[]
+export interface ResumeItemInterface {
+    title: string,
+    subtitle?: string,
+    position: string,
+    link?: string,
 }

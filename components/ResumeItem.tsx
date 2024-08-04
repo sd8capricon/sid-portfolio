@@ -1,8 +1,6 @@
-interface Props {
-    title: string,
-    subtite?: string,
-    position: string
-    link?: string,
+import { ResumeItemInterface } from "../types"
+
+interface Props extends ResumeItemInterface {
     children: React.ReactNode,
 }
 
@@ -20,7 +18,7 @@ const ResumeItem: React.FC<Props> = (props) => {
             <a target="_blank" href={props.link}>
                 <h4 className='font-bold uppercase text-primary-lighter'>
                     {props.title}
-                    <span className="font-normal">{props.subtite}</span>
+                    <span className="font-normal">{props.subtitle}</span>
                 </h4>
                 {/* <span className='font-semibold'>Hons in Data Science</span><br /> */}
             </a>

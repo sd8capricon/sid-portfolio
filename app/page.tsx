@@ -1,28 +1,34 @@
 "use client"
 
+// Framework
 import Link from "next/link";
 import Image from "next/image";
-
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
+// Components
 import NavBar from '../components/NavBar'
 import Section, { SectionTitle } from '../components/Section';
 import SocialLinks from '../components/SocialLinks';
 import ResumeItem, { ResumeItemList } from '../components/ResumeItem';
+
+// Animation
 import animation from "../utils/animation";
+
+//Resume
+import Resume from "../utils/resume";
 
 
 export default function () {
 
-    const navRef = useRef<HTMLElement>(null);
+    console.log(Resume);
 
     useGSAP(animation)
 
     return (
         <>
             {/* Navbar */}
-            <NavBar innerRef={navRef} />
+            <NavBar />
 
             {/* Terminal Section */}
             <Section className="h-screen flex flex-col justify-center items-center" id="home">
@@ -87,7 +93,7 @@ export default function () {
                         <h3 className="text-2xl font-bold inline-block mb-5">Education</h3>
                         <ResumeItem
                             title="Bachelor Engineering - Computer Engineering"
-                            subtite="Hons in Data Science"
+                            subtitle="Hons in Data Science"
                             position="University of Mumbai(2020-24)"
                         >
                             <ResumeItemList>
