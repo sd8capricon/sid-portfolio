@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 import NavBar from '../components/NavBar'
 import Section, { SectionTitle } from '../components/Section';
 import SocialLinks from '../components/SocialLinks';
-import ResumeProject from '../components/ResumeProject';
+import ResumeProject from '../components/ResumeItem';
 
 import { Project } from '../types';
 

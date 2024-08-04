@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 import NavBar from '../components/NavBar'
 import Section, { SectionTitle } from '../components/Section';
 import SocialLinks from '../components/SocialLinks';
-import ResumeProject from '../components/ResumeProject';
+import ResumeItem, { ResumeItemList } from '../components/ResumeItem';
 import animation from "../utils/animation";
 
 
@@ -78,6 +78,7 @@ export default function () {
             <Section id='resume'>
                 <SectionTitle>Check Out My Resume</SectionTitle>
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full rounded-xl px-1 py-5 bg-primary">
+                    {/* Left Side */}
                     <div className="lg:col-span-1 ml-3 md:ml-9">
                         <h3 className="text-2xl font-bold inline-block mb-5">Education</h3>
                         <div className="container px-5 resume-item relative border-l-2 mb-5">
@@ -85,7 +86,6 @@ export default function () {
                                 Bachelor Engineering - Computer Engineering, <br />
                                 <span className='font-normal'>Hons in Data Science</span>
                             </h4>
-                            {/* <span className='font-semibold'>Hons in Data Science</span><br /> */}
                             <span className='text-gray-300 italic'>University of Mumbai(2020-24)</span>
                             <ul className='text-gray-300 mt-5 ml-3 list-disc'>
                                 <li>Association of Computing Machinery(ACM) - Vice ChairPerson(2022-23), Asst. Technical Head(2021-22)</li>
@@ -96,63 +96,79 @@ export default function () {
                         </div>
 
                         <h3 className="text-2xl font-bold inline-block mb-5">Organizations</h3>
-                        <div className="container px-5 resume-item relative border-l-2">
-                            <h4 className='font-bold uppercase text-primary-lighter'>Association of Computing Machinery(ACM)</h4>
-                            <span className='text-gray-300 italic'>Vice Chairperson (2022-23)</span>
-                            <ul className='text-gray-300 mt-5 ml-3 list-disc mb-5'>
+                        <ResumeItem
+                            title="Association of Computing Machinery(ACM)"
+                            position="Vice Chairperson (2022-23)">
+                            <ResumeItemList>
                                 <li>Co-ordinate and manage the Core Team and organize events, workshops and trainings for the students.</li>
                                 <li>Manage and coordinate all the activities of the chapter and responsible for all administrative, functional and Organizational duties in the chapter.</li>
-                            </ul>
+                            </ResumeItemList>
                             <span className='text-gray-300 italic'>Asst-Technical Head (2021-22)</span>
-                            <ul className='text-gray-300 mt-5 ml-3 list-disc mb-5'>
+                            <ResumeItemList>
                                 <li>Conducted workshops, taught and trained students on topics like Git, GitHub, Web Development.</li>
                                 <li>Responsible for maintaining and implementing new features for the offical chapter website.</li>
-                            </ul>
-                        </div>
+                            </ResumeItemList>
+                        </ResumeItem>
+                        {/* <div className="container px-5 resume-item relative border-l-2 mb-5">
+                            <h4 className='font-bold uppercase text-primary-lighter'>Association of Computing Machinery(ACM)</h4>
+                            <span className='text-gray-300 italic'>Vice Chairperson (2022-23)</span>
+
+                        </div> */}
                     </div>
+                    {/* RIght Side */}
                     <div className="lg:col-span-1 px-1 ml-3 md:ml-auto">
                         <div className="container">
                             <h3 className="text-2xl font-bold mb-5">Projects</h3>
-                            <ResumeProject
-                                org="Sacred Hearts School"
-                                title="Website Developer"
+                            <ResumeItem
+                                title="Sacred Hearts School"
+                                position="Website Developer"
                                 link="https://sacredheartschool.in">
-                                <li>Official Website for Sacred Heart School.</li>
-                                <li>Developed, Designed and Deployed the website</li>
-                                <li>Technologies: Astro, Tailwind CSS, Typescript</li>
-                            </ResumeProject>
-                            <ResumeProject
-                                org='Architect Yogesh Dhaigude'
-                                title='Website Developer'
+                                <ResumeItemList>
+                                    <li>Official Website for Sacred Heart School.</li>
+                                    <li>Developed, Designed and Deployed the website</li>
+                                    <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+                                </ResumeItemList>
+                            </ResumeItem>
+                            <ResumeItem
+                                title='Architect Yogesh Dhaigude'
+                                position='Website Developer'
                                 link='https://ayda.in'>
-                                <li>Official Website for Architect Yogesh Dhaigude.</li>
-                                <li>Developed, Designed and Deployed the website with a content management system.</li>
-                                <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
-                            </ResumeProject>
-                            <ResumeProject
-                                org="SAKHYA-WOMEN'S GUIDANCE CELL (NGO)"
-                                title="Website Developer"
+                                <ResumeItemList>
+                                    <li>Official Website for Architect Yogesh Dhaigude.</li>
+                                    <li>Developed, Designed and Deployed the website with a content management system.</li>
+                                    <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
+                                </ResumeItemList>
+                            </ResumeItem>
+                            <ResumeItem
+                                title="SAKHYA-WOMEN'S GUIDANCE CELL (NGO)"
+                                position="Website Developer"
                                 link="https://sakhyawgc.org">
-                                <li>End-to-end development of the NGO's website, enhancing user experience and engagement.</li>
-                                <li>Ensured website security by implementing SSL certificates.</li>
-                                <li>Technologies: Astro, Tailwind CSS, Typescript</li>
-                            </ResumeProject>
-                            <ResumeProject
-                                org="Anti-Plastic Brigade Charitable Trust (NGO)"
-                                title="Website Developer"
+                                <ResumeItemList>
+                                    <li>End-to-end development of the NGO's website, enhancing user experience and engagement.</li>
+                                    <li>Ensured website security by implementing SSL certificates.</li>
+                                    <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+                                </ResumeItemList>
+                            </ResumeItem>
+                            <ResumeItem
+                                title="Anti-Plastic Brigade Charitable Trust (NGO)"
+                                position="Website Developer"
                                 link='https://anti-plasticbrigade.com'>
-                                <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
-                                <li>Developed, Designed and Deployed the website for the NGO.</li>
-                                <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
-                            </ResumeProject>
-                            <ResumeProject
-                                org='COVID-19 Analysis'
-                                title='Data Analysis'
+                                <ResumeItemList>
+                                    <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
+                                    <li>Developed, Designed and Deployed the website for the NGO.</li>
+                                    <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
+                                </ResumeItemList>
+                            </ResumeItem>
+                            <ResumeItem
+                                title='COVID-19 Analysis'
+                                position='Data Analysis'
                             >
-                                <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
-                                <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
-                                <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
-                            </ResumeProject>
+                                <ResumeItemList>
+                                    <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
+                                    <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
+                                    <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
+                                </ResumeItemList>
+                            </ResumeItem>
                         </div>
                     </div>
                 </div>
