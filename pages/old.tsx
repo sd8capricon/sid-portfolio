@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 import NavBar from '../components/NavBar'
 import Section, { SectionTitle } from '../components/Section';
 import SocialLinks from '../components/SocialLinks';
-import ResumeProject from '../components/ResumeItem';
+import ResumeProject, { ResumeItemList } from '../components/ResumeItem';
 
 import { Project } from '../types';
 
@@ -197,44 +197,54 @@ const Home = () => {
             <div className="container">
               <h3 className="text-2xl font-bold mb-5">Projects</h3>
               <ResumeProject
-                org="Sacred Hearts School"
-                title="Website Developer"
+                title="Sacred Hearts School"
+                position="Website Developer"
                 link="https://sacredheartschool.in">
-                <li>Official Website for Sacred Heart School.</li>
-                <li>Developed, Designed and Deployed the website</li>
-                <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+                <ResumeItemList>
+                  <li>Official Website for Sacred Heart School.</li>
+                  <li>Developed, Designed and Deployed the website</li>
+                  <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+                </ResumeItemList>
               </ResumeProject>
               <ResumeProject
-                org='Architect Yogesh Dhaigude'
-                title='Website Developer'
+                title='Architect Yogesh Dhaigude'
+                position='Website Developer'
                 link='https://ayda.in'>
-                <li>Official Website for Architect Yogesh Dhaigude.</li>
-                <li>Developed, Designed and Deployed the website with a content management system.</li>
-                <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
+                <ResumeItemList>
+                  <li>Official Website for Architect Yogesh Dhaigude.</li>
+                  <li>Developed, Designed and Deployed the website with a content management system.</li>
+                  <li>Technologies: HTML, CSS, Javascript, ReactJS, Sanity.io</li>
+                </ResumeItemList>
               </ResumeProject>
               <ResumeProject
-                org="SAKHYA-WOMEN'S GUIDANCE CELL (NGO)"
-                title="Website Developer"
+                title="SAKHYA-WOMEN'S GUIDANCE CELL (NGO)"
+                position="Website Developer"
                 link="https://sakhyawgc.org">
-                <li>End-to-end development of the NGO's website, enhancing user experience and engagement.</li>
-                <li>Ensured website security by implementing SSL certificates.</li>
-                <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+                <ResumeItemList>
+                  <li>End-to-end development of the NGO's website, enhancing user experience and engagement.</li>
+                  <li>Ensured website security by implementing SSL certificates.</li>
+                  <li>Technologies: Astro, Tailwind CSS, Typescript</li>
+                </ResumeItemList>
               </ResumeProject>
               <ResumeProject
-                org="Anti-Plastic Brigade Charitable Trust (NGO)"
-                title="Website Developer"
+                title="Anti-Plastic Brigade Charitable Trust (NGO)"
+                position="Website Developer"
                 link='https://anti-plasticbrigade.com'>
-                <li>Official Website for Anti-Plastic Brigade Charitable Trust.</li>
-                <li>Developed, Designed and Deployed the website for the NGO.</li>
-                <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
+                <ResumeItemList>
+                  <li> Official Website for Anti-Plastic Brigade Charitable Trust.</li>
+                  <li>Developed, Designed and Deployed the website for the NGO.</li>
+                  <li>Technologies: HTML, CSS, Javascript and Bootstrap.</li>
+                </ResumeItemList>
               </ResumeProject>
               <ResumeProject
-                org='COVID-19 Analysis'
-                title='Data Analysis'
+                title='COVID-19 Analysis'
+                position='Data Analysis'
               >
-                <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
-                <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
-                <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
+                <ResumeItemList>
+                  <li>Analysed the trends in the covid cases of Andhra Pradesh State, India.</li>
+                  <li>Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.</li>
+                  <li>Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn</li>
+                </ResumeItemList>
               </ResumeProject>
             </div>
           </div>
