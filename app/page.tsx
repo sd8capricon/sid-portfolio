@@ -21,10 +21,11 @@ export default function () {
 
     return (
         <>
+            {/* Navbar */}
             <NavBar innerRef={navRef} />
 
+            {/* Terminal Section */}
             <Section className="h-screen flex flex-col justify-center items-center" id="home">
-
                 <div className="terminal container w-fit rounded-xl">
                     <div className="bg-[#545454] py-1 px-5 rounded-t-xl">
                         <span className="h-3 w-3 bg-red-500 inline-block rounded-full"> </span>&nbsp;
@@ -50,6 +51,7 @@ export default function () {
                 <SocialLinks />
             </Section>
 
+            {/* About Section */}
             <Section id="about">
                 <div className="grid md:grid-flow-row lg:grid-flow-col lg:gap-24">
                     <div className="col-auto py-7 mx-auto lg:block">
@@ -75,11 +77,13 @@ export default function () {
                 </div>
             </Section>
 
+            {/* Basic Resume Section */}
             <Section id='resume'>
                 <SectionTitle>Check Out My Resume</SectionTitle>
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full rounded-xl px-1 py-5 bg-primary">
                     {/* Left Side */}
                     <div className="lg:col-span-1 ml-3 md:ml-9">
+                        {/* Education */}
                         <h3 className="text-2xl font-bold inline-block mb-5">Education</h3>
                         <div className="container px-5 resume-item relative border-l-2 mb-5">
                             <h4 className='font-bold text-primary-lighter'>
@@ -94,7 +98,7 @@ export default function () {
                                 <li>Sessions on topics like Web Development, Programming, Git, GitHub, Game Development, Unity, and many more.</li>
                             </ul>
                         </div>
-
+                        {/* Organizations */}
                         <h3 className="text-2xl font-bold inline-block mb-5">Organizations</h3>
                         <ResumeItem
                             title="Association of Computing Machinery(ACM)"
@@ -109,13 +113,9 @@ export default function () {
                                 <li>Responsible for maintaining and implementing new features for the offical chapter website.</li>
                             </ResumeItemList>
                         </ResumeItem>
-                        {/* <div className="container px-5 resume-item relative border-l-2 mb-5">
-                            <h4 className='font-bold uppercase text-primary-lighter'>Association of Computing Machinery(ACM)</h4>
-                            <span className='text-gray-300 italic'>Vice Chairperson (2022-23)</span>
-
-                        </div> */}
                     </div>
-                    {/* RIght Side */}
+
+                    {/* Right Side-Selected Projects */}
                     <div className="lg:col-span-1 px-1 ml-3 md:ml-auto">
                         <div className="container">
                             <h3 className="text-2xl font-bold mb-5">Projects</h3>
@@ -174,6 +174,7 @@ export default function () {
                 </div>
             </Section >
 
+            {/* Contact Section */}
             <Section id="contact">
                 <SectionTitle>Contact Me</SectionTitle>
                 <div className="grid grid-cols-2">
@@ -224,6 +225,7 @@ export default function () {
                 </div>
             </Section>
 
+            {/* Footer */}
             <footer className="text-center py-3">
                 Designed & Developed by Siddharth Dhaigude
             </footer>
