@@ -1,8 +1,8 @@
 interface Props {
-    title: String,
-    subtite?: String,
-    position: String
-    link?: string
+    title: string,
+    subtite?: string,
+    position: string
+    link?: string,
     children: React.ReactNode,
 }
 
