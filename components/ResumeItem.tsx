@@ -1,8 +1,9 @@
 interface Props {
+    title: String,
+    subtite?: String,
+    position: String
     link?: string
     children: React.ReactNode,
-    title: String,
-    position: String
 }
 
 const ResumeItemList: React.FC<{ children: React.ReactNode }> = (props) => {
@@ -19,6 +20,7 @@ const ResumeItem: React.FC<Props> = (props) => {
             <a target="_blank" href={props.link}>
                 <h4 className='font-bold uppercase text-primary-lighter'>
                     {props.title}
+                    <span className="font-normal">{props.subtite}</span>
                 </h4>
                 {/* <span className='font-semibold'>Hons in Data Science</span><br /> */}
             </a>
