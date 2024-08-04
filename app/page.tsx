@@ -112,7 +112,7 @@ export default function () {
                                 <li>Co-ordinate and manage the Core Team and organize events, workshops and trainings for the students.</li>
                                 <li>Manage and coordinate all the activities of the chapter and responsible for all administrative, functional and Organizational duties in the chapter.</li>
                             </ResumeItemList>
-                            <span className='text-gray-300 italic'>Asst-Technical Head (2021-22)</span>
+                            <span className="text-gray-300 italic">Asst-Technical Head (2021-22)</span>
                             <ResumeItemList>
                                 <li>Conducted workshops, taught and trained students on topics like Git, GitHub, Web Development.</li>
                                 <li>Responsible for maintaining and implementing new features for the offical chapter website.</li>

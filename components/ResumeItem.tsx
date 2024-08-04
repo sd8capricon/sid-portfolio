@@ -6,7 +6,7 @@ interface Props extends ResumeItemInterface {
 
 const ResumeItemList: React.FC<{ children: React.ReactNode }> = (props) => {
     return (
-        <ul className="text-gray-300 mt-5 ml-3 list-disc">
+        <ul className="text-gray-300 mt-5 mb-5 ml-3 list-disc">
             {props.children}
         </ul>
     );
