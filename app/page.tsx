@@ -69,7 +69,7 @@ export default function () {
                             </li>
                             <li>
                                 &gt;{" "}
-                                <a href="/assets/files/Siddharth's Resume.pdf" download="true">
+                                <a href="/assets/files/Siddharth's Resume.pdf" download>
                                     4.Download Resume
                                 </a>
                             </li>
