@@ -103,31 +103,31 @@ export default function () {
                             <p className="mt-6">
                                 A resourceful problem solver with adept, swift, and accurate
                                 Googling abilities. Seek and you shall find! An enthusiastic
-                                computer engineering student with a strong passion for
-                                development and programming, specializing predominantly in web
+                                computer engineer with a strong passion for
+                                development and programming, specializing predominantly in AI
                                 technologies.
                             </p>
                             <ul className="mt-6">
                                 <li>
-                                    {">"} <strong>Degree:</strong> Bachelor of Engineering,
+                                    {">"} <span className="font-semibold">Degree:</span> Bachelor of Engineering,
                                     Computer Enginering
                                     <br />
                                     University of Mumbai (2020-2024)
                                 </li>
                                 <li>
-                                    {">"} <strong>City:</strong> Mumbai, India
+                                    {">"} <span className="font-semibold">City:</span> Mumbai, India
                                 </li>
                                 <li>
-                                    {">"} <strong>Email:</strong>{" "}
+                                    {">"} <span className="font-semibold">Email:</span>{" "}
                                     <Link href="mailto:siddharthdhaigude@gmail.com">
                                         siddharthdhaigude@gmail.com
                                     </Link>
                                 </li>
                             </ul>
                             <p className="mt-6">
-                                My Technical Skills Include:
+                                <span className="font-medium">My Technical Skills Include:</span>
                                 <br />
-                                Python, FastAPI, Neo4j, Langchain, Langgraph,
+                                Python, FastAPI, Neo4j, LangChain, LangGraph,
                                 Javascript/Typescript, ReactJS, SQL, MongoDB
                             </p>
                         </div>
