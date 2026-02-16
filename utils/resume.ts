@@ -10,7 +10,7 @@ interface ResumeEntry extends ResumeItemInterface {
     relatedPositions?: RelatedPosition[]
 }
 
-interface ResumeSection {
+export interface ResumeSection {
     sectionTitle: string;
     items: ResumeEntry[];
 }
