@@ -21,8 +21,6 @@ import Resume from "../utils/resume";
 
 export default function () {
 
-    console.log(Resume);
-
     useGSAP(animation)
 
     return (
