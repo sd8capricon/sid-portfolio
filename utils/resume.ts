@@ -69,20 +69,28 @@ const Resume: ResumeInterface = {
                     link: "https://sakhyawgw.org",
                     highlights: [
                         "End-to-end development of the NGO's website, enhancing user experience and engagement.",
-                        "Ensured website security by implementing SSL certificates.",
                         "Technologies: Astro, Tailwind CSS, Typescript",
                     ],
                 },
                 {
+                    title: "Girls4Impact (NGO)",
+                    position: "Volunteer (2021)",
+                    link: "",
+                    highlights: [
+                        "Taught a 10-week Python course to school students to promote women in tech.",
+                        "Taught computer science fundamentals including binary systems, logic gates, and Python programming fundamentals."
+                    ]
+                },
+                {
                     title: "Anti-Plastic Brigade Charitable Trust (NGO)",
-                    position: "Website Developer (2022)",
+                    position: "Website Developer (2021)",
                     link: "https://anti-plasticbrigade.com",
                     highlights: [
                         "Official Website for Anti-Plastic Brigade Charitable Trust.",
                         "Developed, Designed and Deployed the website for the NGO.",
                         "Technologies: HTML, CSS, Javascript and Bootstrap.",
                     ],
-                }
+                },
             ],
         },
     ],
@@ -97,7 +105,7 @@ const Resume: ResumeInterface = {
                     highlights: [
                         "Enhanced graph-based RAG with agentic capabilities using LangChain and LangGraph, enabling robust Cypher query generation over knowledge graphs.",
                         "Developed multiple AI agents focused on the PLM domain.",
-                        "Owned end-to-end deployments by containerizing the application, deploying to Kubernetes clusters and Azure VMs, and automating CI/CD pipelines."
+                        "Owned end-to-end deployments by containerizing the application, deploying to Kubernetes clusters and Azure VMs, and automating CI/CD pipelines.",
                     ],
                     relatedPositions: [
                         {
@@ -105,47 +113,55 @@ const Resume: ResumeInterface = {
                             highlights: [
                                 "Built a graph-based RAG system for Aras PLM using Microsoft Semantic Kernel and Neo4j.",
                                 "Developed a multimodal ingestion pipeline using LlamaIndex to transform structured and unstructured data into knowledge graphs.",
-                                "Developed a FastAPI-based REST API exposing RAG and agent capabilities with secure authentication."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            sectionTitle: "Projects",
-            items: [
-                {
-                    title: "Sacred Hearts School",
-                    position: "Website Developer",
-                    link: "https://sacredheartschool.in",
-                    highlights: [
-                        "Official Website for Sacred Heart School.",
-                        "Developed, Designed and Deployed the website",
-                        "Technologies: Astro, Tailwind CSS, Typescript",
-                    ],
-                },
-                {
-                    title: "Architect Yogesh Dhaigude",
-                    position: "Website Developer",
-                    link: "https://ayda.in",
-                    highlights: [
-                        "Official Website for Architect Yogesh Dhaigude.",
-                        "Developed, Designed and Deployed the website with a content management system.",
-                        "Technologies: Astro, Tailwind CSS, Typescript",
-                    ],
-                },
-                {
-                    title: "COVID-19 Analysis",
-                    position: "Data Analysis",
-                    highlights: [
-                        "Analysed the trends in the covid cases of Andhra Pradesh State, India.",
-                        "Applied regression algorithm on Tested vs Confirmed cases, Confirmed vs Recovered cases, Confirmed vs Deceased cases and Confirmed cases vs Timeperiod.",
-                        "Technologies: Python, Numpy, Pandas, Matplotlib, Sk-learn",
+                                "Developed a FastAPI-based REST API exposing RAG and agent capabilities with secure authentication.",
+                            ],
+                        },
                     ],
                 },
             ],
         },
+        {
+            sectionTitle: "Publications",
+            items: [
+                {
+                    title: "Smart Posture Analyzer For Exercise",
+                    link: "https://ieeexplore.ieee.org/document/10455069",
+                    position: "Conference Paper (2023)",
+                    highlights: [
+                        'S. Dhaigude, H. Panigrahi, S. Godse and P. Shaikh, "Smart Posture Analyzer For Exercise," 2023 6th International Conference on Advances in Science and Technology(ICAST), Mumbai, India, 2023, pp. 389 - 394, DOI: 10.1109 / ICAST59062.2023.10455069',
+                    ],
+                },
+            ],
+        },
+        {
+            sectionTitle: "Accomplishments",
+            items: [
+                {
+                    title: "Finalist - Smart India Hackathon 2023",
+                    link: "",
+                    position: "Ministry of Education, Government of India",
+                    highlights: [
+                        "Our team designed a language translation tool that converts English to Hindi, aimed at improving digital accessibility.",
+                        "The project was selected for presentation by the Ministry of Power, it was intended for use across government organization websites.",
+                    ],
+                },
+            ],
+        },
+        {
+            sectionTitle: "Certifications",
+            items: [
+                {
+                    title: "Machine Learning Specialization",
+                    link: "https://coursera.org/share/4b94127d7126eee2e3ce0c95ff0b27b7",
+                    position: "DeepLearning.AI",
+                    highlights: [
+                        "Supervised Machine Learning: Regression and Classification",
+                        "Advanced Learning Algorithms: Neural Network Training, Decision Trees",
+                        "Unsupervised Learning, Recommenders, Reinforcement Learning"
+                    ]
+                }
+            ]
+        }
     ],
 };
 
