@@ -239,7 +239,7 @@ export default function () {
 
             {/* Footer */}
             <footer className="text-center py-3">
-                Designed & Developed by Siddharth Dhaigude
+                Fueled by coffee. Driven by curiosity. | Siddharth Dhaigude
             </footer>
         </>
     );
