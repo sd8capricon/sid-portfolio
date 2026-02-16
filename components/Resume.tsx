@@ -13,6 +13,9 @@ const ResumeSectionTitle: React.FC<{ children: React.ReactNode }> = (props) => {
     );
 }
 
+const ResumePosition: React.FC<{ children: React.ReactNode }> = (props) =>
+    <span className='font-semibold text-gray-300 italic'>{props.children}</span>
+
 const ResumeItemList: React.FC<{ children: React.ReactNode }> = (props) => {
     return (
         <ul className="text-gray-300 mt-5 mb-5 ml-3 list-disc">
@@ -30,7 +33,7 @@ const ResumeItem: React.FC<ResumeItemProps> = (props) => {
                     <div className="font-normal">{props.subtitle}</div>
                 </h4>
             </a>
-            <span className='text-gray-300 italic'>{props.position}</span>
+            <ResumePosition>{props.position}</ResumePosition>
             {/* ItemList here */}
             {props.children}
         </div>
@@ -52,11 +55,9 @@ const RenderResumeColumn: React.FC<{ sections: ResumeSection[] }> = (props) => {
                             </ResumeItemList>
                             {item.relatedPositions?.map((related, rIndex) => (
                                 <div key={rIndex}>
-                                    {related.position && (
-                                        <span className="text-gray-300 italic">
-                                            {related.position}
-                                        </span>
-                                    )}
+                                    {related.position &&
+                                        <ResumePosition>{related.position}</ResumePosition>
+                                    }
                                     <ResumeItemList>
                                         {related.highlights.map((h, i) => (
                                             <li key={i}>{h}</li>
