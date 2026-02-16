@@ -10,7 +10,7 @@ import { useGSAP } from "@gsap/react";
 import NavBar from "../components/NavBar";
 import Section, { SectionTitle } from "../components/Section";
 import SocialLinks from "../components/SocialLinks";
-import { RenderResumeColumn } from "../components/ResumeItem";
+import { RenderResumeColumn } from "../components/Resume";
 
 // Animation
 import animation from "../utils/animation";
