@@ -16,6 +16,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -60,7 +61,7 @@ body {
   @apply mb-8;
 }
 
-.home .terminal-shadow{
+.home .terminal-shadow {
   content: '';
   z-index: 500;
   position: absolute;
@@ -69,15 +70,15 @@ body {
   background-color: red;
 }
 
-.home li {
+.terminal li {
   transition: all 0.3s ease-in-out;
 }
 
-.home li a:hover {
+.terminal li a:hover {
   text-decoration: underline;
 }
 
-.home li:hover {
+.terminal li:hover {
   transform: translateX(16px);
 }
 

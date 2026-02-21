@@ -58,4 +58,34 @@ export default function (refs?: refObjectInterface) {
             ease: "ease-in-out",
             translateX: 500,
         })
+
+    // Resume section animations - left column from left, right column from right
+    // Scroll-controlled reveal for resume columns (progress tied to scroll)
+    gsap.from('#resume .grid > div:nth-child(1) .resume-item', {
+        scrollTrigger: {
+            trigger: '#resume .grid',
+            start: 'top 90%',
+            end: 'bottom 80%',
+            scrub: true,
+            markers: true
+        },
+        opacity: 0,
+        x: -150,
+        stagger: 0.12,
+        ease: 'power3.out'
+    })
+
+    gsap.from('#resume .grid > div:nth-child(2) .resume-item', {
+        scrollTrigger: {
+            trigger: '#resume .grid',
+            start: 'top 90%',
+            end: 'bottom 80%',
+            scrub: true,
+            // markers: true
+        },
+        opacity: 0,
+        x: 150,
+        stagger: 0.12,
+        ease: 'power3.out'
+    })
 }
