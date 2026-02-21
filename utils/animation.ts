@@ -67,7 +67,6 @@ export default function (refs?: refObjectInterface) {
             start: 'top 90%',
             end: 'bottom 80%',
             scrub: true,
-            markers: true
         },
         opacity: 0,
         x: -150,
@@ -81,7 +80,6 @@ export default function (refs?: refObjectInterface) {
             start: 'top 90%',
             end: 'bottom 80%',
             scrub: true,
-            // markers: true
         },
         opacity: 0,
         x: 150,
